@@ -1,0 +1,60 @@
+PROJECT TITLE: QRBoost
+
+DESCRIPTION:
+This project is a Python-based application that allows users to generate and scan QR codes and also create WhatsApp QR codes for instant messaging. The project uses libraries such as `qrcode`, `cv2` (OpenCV), `webbrowser`, and `os` to perform various QR-related tasks.
+
+FUNCTIONALITY:
+
+1️⃣ Generate QR Code:
+- This function allows the user to create a QR code from any text or link.
+- The user enters the data they want to encode.
+- The program generates a QR code and saves it as "generated_qr.png".
+- The QR code image is automatically opened after generation.
+
+2️⃣ Scan QR Code:
+- This function uses the computer's webcam to scan QR codes or barcodes.
+- The camera feed is displayed in a window, and the program detects QR codes in real-time.
+- When a QR code is detected, its data is displayed on the screen.
+- The user can press "Q" to exit the scanner.
+
+3️⃣ Scan & Auto Open Link:
+- Similar to the previous function, this also scans QR codes using the webcam.
+- If the scanned QR code contains a valid URL (starting with http:// or https://), the program automatically opens the link in the default web browser.
+- The scanned QR code is highlighted on the screen with a green bounding box.
+
+4️⃣ Generate WhatsApp QR Code:
+- This function creates a QR code specifically for opening WhatsApp chat with a specific phone number.
+- The user inputs:
+  - Country code (e.g., +92 for Pakistan)
+  - Phone number
+  - Optional message to pre-fill in the chat
+- The program generates a WhatsApp URL with the provided information.
+- A QR code is created for this URL and saved as "whatsapp_qr.png".
+- Scanning this QR code will directly open WhatsApp Web chat with the specified number and message.
+
+LIBRARIES USED:
+- `qrcode`: To generate QR codes.
+- `cv2` (OpenCV): To access the webcam and scan QR codes.
+- `webbrowser`: To open links and WhatsApp Web automatically.
+- `os`: To open the saved QR code image automatically.
+- `urllib.parse`: To encode messages for WhatsApp URLs.
+
+HOW TO USE:
+1. Run the Python program.
+2. Select the desired option from the menu:
+   - Option 1: Generate a normal QR code.
+   - Option 2: Scan QR code.
+   - Option 3: Scan QR code and auto-open links.
+   - Option 4: Generate WhatsApp QR code.
+3. Follow the on-screen instructions for each option.
+4. For scanning, the webcam will open; press "Q" to exit the camera window.
+5. For WhatsApp QR, scan the generated QR code using any device to open WhatsApp chat directly.
+
+ADVANTAGES:
+- Easy to use QR code generation and scanning system.
+- WhatsApp QR feature allows instant communication via QR.
+- Real-time scanning with visual feedback (green bounding box on QR).
+- Beginner-friendly and highly practical for personal or small business use.
+
+CONCLUSION:
+This project demonstrates practical use of Python for QR code generation, scanning, and integrating communication tools like WhatsApp. It combines multiple Python libraries to create a user-friendly interface for handling QR codes efficiently.
